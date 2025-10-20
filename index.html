@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaSGlow — Automate. Optimize. Scale.</title>
+    <meta name="description" content="We turn messy startup workflows into AI-powered systems in 7 days that help you scale 3x faster.">
+    
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:title" content="SaaSGlow — Automate. Optimize. Scale.">
+    <meta property="og:description" content="We turn messy startup workflows into AI-powered systems in 7 days.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/f8fafc/2F5496?text=SaaSGlow">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --brand: #2F5496; /* SaaS Blue */
+            --brand-dark: #234272; /* Darker Blue */
+            --brand-accent: #f59e0b; /* Amber/Yellow */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* neutral-50 */
+            color: #334155; /* neutral-700 */
+        }
+        .cta-primary {
+            background-color: var(--brand);
+            color: white;
+            transition: background-color 0.2s;
+        }
+        .cta-primary:hover {
+            background-color: var(--brand-dark);
+        }
+        .cta-secondary {
+            color: var(--brand);
+            background-color: transparent;
+            border: 1px solid #e2e8f0; /* neutral-200 */
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .cta-secondary:hover {
+            background-color: #f1f5f9; /* neutral-100 */
+        }
+        .section-spacing {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+        @media (min-width: 1024px) {
+            .section-spacing {
+                padding-top: 96px;
+                padding-bottom: 96px;
+            }
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .plus-icon { display: none; }
+        details:not([open]) .minus-icon { display: none; }
+
+        /* Marquee animation for logos */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+
+        /* Logo Cropping */
+        .logo-icon-wrapper {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .logo-icon-wrapper img {
+            height: 100px;
+            width: auto;
+            object-fit: cover;
+            object-position: 15% 25%; /* Adjust these values to perfectly center the SG */
+            margin-top: -5px;
+        }
+         .footer-logo-icon-wrapper {
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .footer-logo-icon-wrapper img {
+            height: 80px;
+            width: auto;
+            object-fit: cover;
+            object-position: 15% 25%;
+            margin-top: -4px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-200">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center max-w-[1200px]">
+            <a href="#" class="flex items-center gap-3 text-2xl font-bold">
+                <div class="logo-icon-wrapper">
+                    <img src="SAASGLOWS_BK-removebg-preview.png" alt="SaaSGlow Logo">
+                </div>
+                <span style="color: var(--brand);">SaaSGlow</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-slate-600 hover:text-slate-900">Features</a>
+                <a href="#plan" class="text-slate-600 hover:text-slate-900">Plan</a>
+                <a href="#pricing" class="text-slate-600 hover:text-slate-900">Pricing</a>
+                <a href="#faq" class="text-slate-600 hover:text-slate-900">FAQ</a>
+            </div>
+            <a href="#book" class="cta-primary font-semibold px-5 py-2 rounded-xl text-base h-[44px] inline-flex items-center">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="section-spacing">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900" style="line-height: 1.1;">
+                        Stop Drowning in Chaos. Start Automating, Optimizing, & Scaling.
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        We turn your messy startup workflows into automated AI systems in 7 days—so you can scale 3× faster.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#book" class="cta-primary h-[44px] inline-flex items-center justify-center font-semibold px-6 py-3 rounded-xl">Book a Free Ops Audit</a>
+                        <a href="#plan" class="cta-secondary h-[44px] inline-flex items-center justify-center font-semibold px-6 py-3 rounded-xl">See the 7-Day Plan</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x500/f8fafc/2F5496?text=Illustration" alt="Illustration of an organized workflow dashboard" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- "Trusted By" Logo Wall Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <p class="text-center text-slate-500 font-semibold">TRUSTED BY GROWING STARTUPS</p>
+                <div class="relative mt-6 overflow-hidden">
+                    <div class="flex animate-marquee">
+                        <div class="flex w-full justify-around items-center flex-shrink-0">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Company" alt="Company Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Startup" alt="Startup Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Innovate" alt="Innovate Co Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=NextGen" alt="NextGen Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Apex" alt="Apex Inc Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Quantum" alt="Quantum Logo" class="h-10 mx-8">
+                        </div>
+                        <div class="flex w-full justify-around items-center flex-shrink-0" aria-hidden="true">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Company" alt="Company Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Startup" alt="Startup Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Innovate" alt="Innovate Co Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=NextGen" alt="NextGen Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Apex" alt="Apex Inc Logo" class="h-10 mx-8">
+                            <img src="https://placehold.co/150x60/f8fafc/94a3b8?text=Quantum" alt="Quantum Logo" class="h-10 mx-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" class="section-spacing bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <i data-lucide="layout-dashboard" class="w-10 h-10 mb-4" style="color: var(--brand);"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Your Mission Control</h3>
+                        <p class="text-slate-600 mt-2">A central dashboard with a bird's-eye view of revenue, leads, and project delivery at a glance.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <i data-lucide="repeat" class="w-10 h-10 mb-4" style="color: var(--brand);"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Effortless Billing</h3>
+                        <p class="text-slate-600 mt-2">Integrate flexible billing and subscription management directly into your operational flow.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <i data-lucide="users" class="w-10 h-10 mb-4" style="color: var(--brand);"></i>
+                        <h3 class="text-xl font-bold text-slate-900">A Crystal-Clear Pipeline</h3>
+                        <p class="text-slate-600 mt-2">A clean CRM with total visibility on lead handoffs, client status, and team responsibilities.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <i data-lucide="zap" class="w-10 h-10 mb-4" style="color: var(--brand);"></i>
+                        <h3 class="text-xl font-bold text-slate-900">Your AI Workforce</h3>
+                        <p class="text-slate-600 mt-2">Leverage Zapier/Make and custom AI assistants to automate tasks and work for you 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7-Day Plan -->
+        <section id="plan" class="section-spacing">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">Your 7-Day Transformation</h2>
+                    <p class="mt-4 text-lg text-slate-600">We don't do endless meetings or vague promises. We deliver a complete, high-impact operational system in one week. Here's how.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 1:</strong> Ops audit, outcomes, system map</div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 2-3:</strong> Workspace model (spaces, DBs, statuses)</div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 3-4:</strong> Automations: intake→CRM→projects→invoicing</div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 5:</strong> Top-10 SOPs + Loom walkthroughs</div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 6:</strong> AI assistants (notes→tasks, status→update)</div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200"><strong class="font-bold text-slate-900" style="color: var(--brand);">Day 7:</strong> Team training + 30-day success plan</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "See It In Action" Demo Section -->
+        <section id="demo" class="section-spacing bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">See It In Action</h2>
+                    <p class="mt-4 text-lg text-slate-600">Words are great, but results are better. Watch this 2-minute demo to see exactly what your new "Mission Control" dashboard will look and feel like.</p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto aspect-video bg-slate-300 rounded-2xl border border-slate-200 flex items-center justify-center">
+                    <!-- Embed your Loom video here -->
+                    <p class="text-slate-500">Loom Video Embed Placeholder</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="section-spacing">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">Choose a plan that's right for you</h2>
+                    <p class="mt-4 text-lg text-slate-600">Simple, transparent pricing. No hidden fees, no long-term contracts. Just results.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Starter Plan -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-900">Starter</h3>
+                        <p class="mt-2 text-slate-600">System setup for one core function.</p>
+                        <div class="mt-6">
+                            <div class="flex items-baseline gap-x-2">
+                                <span class="text-2xl font-medium text-slate-500 line-through">$2,000</span>
+                                <span class="text-4xl font-bold text-slate-900">$1,500</span>
+                            </div>
+                            <p class="mt-1 text-sm font-semibold" style="color: var(--brand);">Launch Offer | Ends Nov 30th</p>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>Mini workspace</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>3 automations</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>5 SOPs</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>Training session</span></li>
+                             <li class="flex items-start font-semibold text-slate-700 pt-4 border-t border-slate-200 mt-4"><i data-lucide="plus-circle" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand-accent);"></i><span>Includes 3 Bonus Automation Templates</span></li>
+                        </ul>
+                        <a href="https://calendly.com/your-handle/ops-audit" target="_blank" class="cta-secondary h-[44px] w-full mt-8 inline-flex items-center justify-center font-semibold px-6 py-3 rounded-xl">Choose Plan</a>
+                    </div>
+                    <!-- Pro Plan (Most Popular) -->
+                    <div class="bg-white p-8 rounded-2xl border-2 flex flex-col relative" style="border-color: var(--brand);">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                            <span class="text-sm font-semibold text-slate-800 px-3 py-1 rounded-full" style="background-color: var(--brand-accent);">Most Popular</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Pro</h3>
+                        <p class="mt-2 text-slate-600">Full company system + automations.</p>
+                         <div class="mt-6">
+                            <div class="flex items-baseline gap-x-2">
+                                <span class="text-2xl font-medium text-slate-500 line-through">$3,500</span>
+                                <span class="text-4xl font-bold text-slate-900">$2,500</span>
+                            </div>
+                            <p class="mt-1 text-sm font-semibold" style="color: var(--brand);">Launch Offer | Ends Nov 30th</p>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>Full workspace</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>8–12 automations</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>10 SOPs</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>30-day support</span></li>
+                            <li class="flex items-start font-semibold text-slate-700 pt-4 border-t border-slate-200 mt-4"><i data-lucide="plus-circle" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand-accent);"></i><span>Includes Pro Automation Pack</span></li>
+                        </ul>
+                        <a href="https://calendly.com/your-handle/ops-audit" target="_blank" class="cta-primary h-[44px] w-full mt-8 inline-flex items-center justify-center font-semibold px-6 py-3 rounded-xl">Choose Plan</a>
+                    </div>
+                    <!-- Elite Plan -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-900">Elite</h3>
+                        <p class="mt-2 text-slate-600">Full setup + AI integration + training.</p>
+                        <div class="mt-6">
+                            <div class="flex items-baseline gap-x-2">
+                                <span class="text-2xl font-medium text-slate-500 line-through">$5,000</span>
+                                <span class="text-4xl font-bold text-slate-900">$3,500</span>
+                            </div>
+                            <p class="mt-1 text-sm font-semibold" style="color: var(--brand);">Launch Offer | Ends Nov 30th</p>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>All Pro features</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>AI assistants</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>SOP manual (20)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand);"></i><span>Team workshops</span></li>
+                            <li class="flex items-start font-semibold text-slate-700 pt-4 border-t border-slate-200 mt-4"><i data-lucide="plus-circle" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--brand-accent);"></i><span>Includes AI Assistant Integration</span></li>
+                        </ul>
+                        <a href="https://calendly.com/your-handle/ops-audit" target="_blank" class="cta-secondary h-[44px] w-full mt-8 inline-flex items-center justify-center font-semibold px-6 py-3 rounded-xl">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-spacing bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-1">
+                    <img src="https://placehold.co/400x400/f8fafc/2F5496?text=Your\nPhoto" alt="Your Name, Founder of SaaSGlow" class="rounded-full mx-auto shadow-xl w-64 h-64 lg:w-full lg:h-auto">
+                </div>
+                <div class="lg:col-span-2 text-center lg:text-left">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">Meet Your Systems Architect</h2>
+                    <p class="mt-4 text-lg text-slate-600">I'm [Your Name], a **PMP® Certified Project Manager** who's passionate about turning startup chaos into scalable clarity. I combine disciplined project management with modern tools to build the operational backbone that frees you to focus on growth, not guesswork.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section-spacing relative">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">Don't Just Take Our Word For It</h2>
+                    <p class="mt-4 text-lg text-slate-600">See the real-world results we've delivered for founders and operators just like you.</p>
+                </div>
+                <div class="mt-12 overflow-hidden relative">
+                    <div id="testimonial-slider" class="flex transition-transform duration-300 ease-in-out">
+                        <!-- Slide 1 -->
+                        <div class="w-full lg:w-1/2 flex-shrink-0 px-4">
+                            <div class="bg-white h-full p-8 rounded-2xl border border-slate-200">
+                                <div class="flex items-center mb-4"><img src="https://placehold.co/48x48/2F5496/FFFFFF?text=Logo" alt="Company Logo" class="h-10 w-auto"></div>
+                                <p class="text-lg text-slate-800">"Lead→project handoff dropped from 3 days to 3 hours. Delivery is finally consistent."</p>
+                                <div class="mt-6 border-t border-slate-200 pt-6"><p class="font-bold text-slate-900">Founder, Creative Agency</p><p class="font-bold" style="color: var(--brand);">Result: 95% Faster Handoff</p></div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="w-full lg:w-1/2 flex-shrink-0 px-4">
+                            <div class="bg-white h-full p-8 rounded-2xl border border-slate-200">
+                                <div class="flex items-center mb-4"><img src="https://placehold.co/48x48/1E293B/FFFFFF?text=Logo" alt="Company Logo" class="h-10 w-auto"></div>
+                                <p class="text-lg text-slate-800">"The SOP pack and AI updates freed the founder from day-to-day ops in a week."</p>
+                                <div class="mt-6 border-t border-slate-200 pt-6"><p class="font-bold text-slate-900">COO, SaaS Startup</p><p class="font-bold" style="color: var(--brand);">Result: 10+ Founder Hours Saved Weekly</p></div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="w-full lg:w-1/2 flex-shrink-0 px-4">
+                            <div class="bg-white h-full p-8 rounded-2xl border border-slate-200">
+                                <div class="flex items-center mb-4"><img src="https://placehold.co/48x48/4ade80/FFFFFF?text=Logo" alt="Company Logo" class="h-10 w-auto"></div>
+                                <p class="text-lg text-slate-800">"Our team adoption of Notion went from 20% to 90% almost overnight. The training and custom videos were the key."</p>
+                                <div class="mt-6 border-t border-slate-200 pt-6"><p class="font-bold text-slate-900">Head of People, Tech Company</p><p class="font-bold" style="color: var(--brand);">Result: 4.5x Increase in Tool Adoption</p></div>
+                            </div>
+                        </div>
+                         <!-- Slide 4 -->
+                        <div class="w-full lg:w-1/2 flex-shrink-0 px-4">
+                            <div class="bg-white h-full p-8 rounded-2xl border border-slate-200">
+                                <div class="flex items-center mb-4"><img src="https://placehold.co/48x48/f97316/FFFFFF?text=Logo" alt="Company Logo" class="h-10 w-auto"></div>
+                                <p class="text-lg text-slate-800">"I can finally see our entire sales pipeline and project status in one place. It's the clarity I've needed for years."</p>
+                                <div class="mt-6 border-t border-slate-200 pt-6"><p class="font-bold text-slate-900">Founder, B2B Service Co.</p><p class="font-bold" style="color: var(--brand);">Result: From 0 to 100% Pipeline Visibility</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-center gap-4">
+                    <button id="prev-testimonial" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-100 flex items-center justify-center"><i data-lucide="arrow-left" class="w-6 h-6"></i></button>
+                    <button id="next-testimonial" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-100 flex items-center justify-center"><i data-lucide="arrow-right" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-spacing bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">Frequently Asked Questions</h2>
+                </div>
+                <div class="mt-12 max-w-3xl mx-auto space-y-4">
+                    <details class="bg-white p-6 rounded-lg border border-slate-200 group">
+                        <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">
+                            What tools will I need to pay for?
+                            <i data-lucide="plus" class="w-5 h-5 plus-icon transition-transform group-open:rotate-45"></i>
+                            <i data-lucide="minus" class="w-5 h-5 minus-icon transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600">Our systems are built on best-in-class tools. You will need your own paid subscriptions for Notion (Plus plan or higher) and Zapier (Starter plan or higher), depending on your team size and usage.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg border border-slate-200 group">
+                        <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">
+                            What do you need from me to get started?
+                            <i data-lucide="plus" class="w-5 h-5 plus-icon transition-transform group-open:rotate-45"></i>
+                            <i data-lucide="minus" class="w-5 h-5 minus-icon transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600">The most important input is your time during the 2-hour Discovery & Mapping session. You'll need to be ready to walk us through your current processes. After that, we just need access to the relevant accounts, and we handle the rest.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg border border-slate-200 group">
+                        <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">
+                            What happens during the 30-day support period?
+                            <i data-lucide="plus" class="w-5 h-5 plus-icon transition-transform group-open:rotate-45"></i>
+                            <i data-lucide="minus" class="w-5 h-5 minus-icon transition-transform group-open:rotate-45"></i>
+                        </summary>
+                        <p class="mt-4 text-slate-600">This is your success guarantee. For 30 days after launch, you have direct Slack/email access to us for any questions, bug fixes, or minor tweaks to the system. We're on standby to ensure your team's adoption is smooth and successful.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Book/Contact Section -->
+        <section id="book" class="section-spacing">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900">Ready to Build Your Scalable System?</h2>
+                    <p class="mt-4 text-lg text-slate-600">Book a free, no-obligation 20-minute Ops Audit call. We'll diagnose your biggest bottlenecks and show you exactly how we can help.</p>
+                </div>
+                <div class="mt-12">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget rounded-2xl overflow-hidden border border-slate-200" data-url="https://calendly.com/your-handle/ops-audit" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-slate-500 max-w-[1200px]">
+             <div class="flex items-center justify-center gap-3">
+                 <div class="footer-logo-icon-wrapper">
+                    <img src="SAASGLOWS_BK-removebg-preview.png" alt="SaaSGlow Logo">
+                </div>
+                <p>&copy; 2025 SaaSGlow. Automate. Optimize. Scale.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Render Lucide icons
+        lucide.createIcons();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                     targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Testimonial Slider Logic
+        const slider = document.getElementById('testimonial-slider');
+        const prevBtn = document.getElementById('prev-testimonial');
+        const nextBtn = document.getElementById('next-testimonial');
+        
+        let currentIndex = 0;
+        let slideCount = slider.children.length;
+        let slidesPerView = window.innerWidth < 1024 ? 1 : 2;
+
+        function updateSlider() {
+            let offset = -currentIndex * (100 / slidesPerView);
+            if (slidesPerView === 1) {
+                offset = -currentIndex * 100;
+            }
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        function handleResize() {
+            slidesPerView = window.innerWidth < 1024 ? 1 : 2;
+            slideCount = slider.children.length;
+            if (currentIndex > slideCount - slidesPerView) {
+                currentIndex = slideCount - slidesPerView;
+            }
+            updateSlider();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < slideCount - slidesPerView) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to start
+            }
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slideCount - slidesPerView; // Loop to end
+            }
+            updateSlider();
+        });
+        
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Initial setup
+
+    </script>
+</body>
+</html>
+
