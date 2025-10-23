@@ -77,32 +77,36 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Logo Cropping */
+        /* Logo Cropping - UPDATED object-position */
         .logo-icon-wrapper {
-            width: 40px;
+            width: 40px; /* Controls the size of the viewbox */
             height: 40px;
             overflow: hidden;
             display: inline-block;
+            vertical-align: middle; /* Helps align logo with text */
         }
         .logo-icon-wrapper img {
-            height: 100px;
+            height: 80px; /* Make image larger inside the viewbox */
             width: auto;
             object-fit: cover;
-            object-position: 15% 25%; /* Adjust these values to perfectly center the SG */
-            margin-top: -5px;
+            /* Adjust X% Y% - Trial 1: shift right and slightly up */
+            object-position: 45% 40%;
+            transform: scale(1.5); /* Slightly zoom in if needed */
         }
          .footer-logo-icon-wrapper {
-            width: 32px;
+            width: 32px; /* Controls the size of the viewbox */
             height: 32px;
             overflow: hidden;
             display: inline-block;
+            vertical-align: middle; /* Helps align logo with text */
         }
         .footer-logo-icon-wrapper img {
-            height: 80px;
+            height: 64px; /* Make image larger inside the viewbox */
             width: auto;
             object-fit: cover;
-            object-position: 15% 25%;
-            margin-top: -4px;
+            /* Adjust X% Y% - Trial 1: shift right and slightly up */
+            object-position: 45% 40%;
+             transform: scale(1.5); /* Slightly zoom in if needed */
         }
     </style>
 </head>
